@@ -21,14 +21,12 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    # return pd.read_excel("DATA.xlsx")
-    return pd.read_excel("C:/NEU/Research/Research/Kim project/Codes/4 LGboost/final/new task gui kim/DATA.xlsx")
+    return pd.read_excel("DATA.xlsx")
 
 
 @st.cache_resource
 def load_model():
-    # return joblib.load("lightgbm_model.pkl")
-    return joblib.load("C:/NEU/Research/Research/Kim project/Codes/4 LGboost/final/new task gui kim/lightgbm_model.pkl")
+    return joblib.load("lightgbm_model.pkl")
 
 
 # --- Load Data & Model ---
@@ -102,4 +100,5 @@ if submitted:
             st.success(f"🌟 Predicted Removal Efficiency (%): {pred:.2f}")
     except Exception as e:
         st.error(f"⚠️ Invalid input! {str(e)}")
+
 
