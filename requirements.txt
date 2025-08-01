@@ -3,6 +3,7 @@ streamlit
 openpyxl
 scikit-learn
 lightgbm
-random
 joblib
+wheel
+
 
